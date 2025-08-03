@@ -1,0 +1,35 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+app_api_login_check:
+    path: /api/login_check
+
+# CART
+app_api_cart:
+    path: /api/cart
+    controller: App\Cart\Infrastructure\Api\CartController::cart
+    methods: [ GET ]
+
+app_api_product_to_cart_adder:
+    path: /api/cart/add-item
+    controller: App\Cart\Infrastructure\Api\ProductToCartAdderController::add
+    methods: [ POST ]
+
+app_api_product_to_cart_remover:
+    path: /api/cart/remove-item
+    controller: App\Cart\Infrastructure\Api\ProductToCartRemoverController::remove
+    methods: [ DELETE ]
+
+app_api_product_to_cart_updater:
+    path: /api/cart/update-item
+    controller: App\Cart\Infrastructure\Api\ProductToCartUpdaterController::update
+    methods: [ PATCH ]
+
+# ORDER
+app_api_order_checkout:
+    path: /api/order/checkout
+    controller: App\Order\Infrastructure\Api\OrderCheckoutController::checkout
+    methods: [ POST ]
