@@ -34,6 +34,7 @@ Cada módulo está dividido en tres capas principales:
 
 ## Bibliotecas
 -  `nelmio/api-doc-bundle` para documentar las API's.
+-  `lexik/jwt-authentication-bundle` para la autentificación con JWT
 -  `doctrine/doctrine-bundle` para modelar la base de datos con nuestro dominio.
 -  `phpunit/phpunit` para testear.
 
