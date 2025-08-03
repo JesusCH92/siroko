@@ -1,0 +1,11 @@
+@env=dev
+### Add item to cart
+POST http://localhost:8080/api/cart/add-item
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "productId": 1,
+    "quantity": 7
+}
+

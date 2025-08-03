@@ -1,0 +1,10 @@
+@env=dev
+### Update item quantity in cart
+PATCH http://localhost:8080/api/cart/update-item
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "productId": 1,
+    "quantity": 11
+}

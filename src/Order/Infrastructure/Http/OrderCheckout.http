@@ -1,0 +1,5 @@
+@env=dev
+### Checkout order
+POST http://localhost:8080/api/order/checkout
+Authorization: Bearer {{token}}
+Accept: application/json

@@ -1,0 +1,9 @@
+@env=dev
+### Remove item from cart
+DELETE http://localhost:8080/api/cart/remove-item
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "productId": 1
+}

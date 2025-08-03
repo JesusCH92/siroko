@@ -1,0 +1,5 @@
+@env=dev
+### Get current user's cart
+GET http://localhost:8080/api/cart
+Authorization: Bearer {{token}}
+Accept: application/json

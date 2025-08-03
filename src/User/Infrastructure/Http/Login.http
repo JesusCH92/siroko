@@ -1,0 +1,15 @@
+@env=dev
+
+### Login and save token
+POST http://localhost:8080/api/login_check
+Content-Type: application/json
+
+{
+    "email": "admin",
+    "password": "admin"
+}
+
+> {%
+    const body = response.body;
+    client.global.set("token", body.token);
+%}
