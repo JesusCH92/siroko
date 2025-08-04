@@ -13,7 +13,7 @@ class ProductName
 {
     private const int LENGTH_MAX = 200;
 
-    #[ORM\Column(name: 'name', type: Types::STRING, length: 200, nullable: false)]
+    #[ORM\Column(name: 'name', type: Types::STRING, length: self::LENGTH_MAX, nullable: false)]
     private string $value;
 
     private function __construct(?string $value)
