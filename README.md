@@ -66,7 +66,7 @@ Cada módulo está dividido en tres capas principales:
 - [ ] Levantar los contenedores:
 
 ```shell
-  docker-compose -p app up -d
+  docker compose -p app up -d
 ```
 
 - [ ] Modo interactivo: acceso al contenedor de PHP(php-fpm):
